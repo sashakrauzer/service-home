@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        link(rel="stylesheet", href="./css/bootstrap/bootstrap-reboot.css")
+        link(rel="stylesheet", href="./css/bootstrap/bootstrap-grid.css")
+        link(rel="stylesheet", href="./css/main.css")
+        link(href='https://fonts.googleapis.com/css2?family=Lato&display=swap', rel='stylesheet')
+        script(src="https://kit.fontawesome.com/33cdcdb48d.js", crossorigin="anonymous")
+        title Service home
+    body
+        .back-to-top <i class="fas fa-chevron-up"></i>
+        aside.subscribe
+            h3.header Newsletter
+            .input
+                input(type="text", placeholder="Enter your email")
+                button <i class="far fa-paper-plane"></i>
+            p Remeber we will not do spam promise.
+        header
+            .cap
+                .container
+                    .row
+                        .wrap
+                            a(href="#") 
+                                img.logo(src="img/logo.png", alt="MIRCOD")
+                            span Framework
+                        a.sign-in(href="#") Sign in
+            .nav
+                .container
+                    nav
+                        a.active(href="#") Constructor
+                        a(href="#") Help
+                        a(href="#") Users panels
+                        a(href="#") Faq
+                        a(href="#") About
+                        a(href="#") Blog
+                    .like-and-search 
+                        button <i class="far fa-heart"></i>
+                        button <i class="fas fa-search"></i>
+            .parallax
+                .bg
+                h1.header Chip <span>Constructor</span>
+        main
+            #app.container
+        footer
+            .first-block.container
+                .row
+                    .about-us
+                        h3.header About us
+                        p Lorem ipsum dolor sit amet, consectetur adip&hyphen;isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    .categories
+                        h3.header Categories
+                        ul
+                            li
+                                a(href="#") Electronics
+                            li
+                                a(href="#") Home & Tools
+                            li
+                                a(href="#") Beauty & Health
+                            li
+                                a(href="#") Toys & Kids
+                    .accept-payments
+                        h3.header Accept payments
+                        ul
+                            li.mc 
+                                img(src="img/mc-logo.png", alt="Mastercard")
+                            li.paypal
+                                img(src="img/paypal-logo.png", alt="Paypal")
+                            li.visa
+                                img(src="img/visa-logo.png", alt="Visa")
+            .hr
+            .second-block.container
+                .row.no-gutters
+                    .copyright.col-4
+                        p <i class="far fa-copyright"></i> 2016 - Mircod. All Rights Reserved.
+                    .social.col-4
+                        ul
+                            li.fb
+                                a(href="#") <i class="fab fa-facebook-f"></i>
+                            li.twitter
+                                a(href="#") <i class="fab fa-twitter"></i>
+                            li.google
+                                a(href="#") <i class="fab fa-google"></i>
+                            li.youtube
+                                a(href="#") <i class="fab fa-youtube"></i>
+                    .other-links.col-4
+                        ul
+                            li
+                                a(href="#") Blog
+                            li
+                                a(href="#") About us
+        script(src="js/script.js")

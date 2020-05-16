@@ -1,0 +1,171 @@
+body>header {
+    background-color: white;
+
+    .cap {
+        background-color: #FEFEFE;
+
+        .container {
+            height: 96px;
+        }
+
+        .row {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .wrap {
+            a {
+                display: inline-block;
+            }
+
+            span {
+                font-family: 'Lato', sans-serif;
+                text-transform: uppercase;
+                font-size: 12px;
+                margin-left: 6px;
+                display: inline-block;
+                position: relative;
+                top: 3px;
+                color: #6d6d6d;
+            }
+        }
+
+        .logo {
+            width: 129px;
+            height: 38px;
+            margin-left: 18px;
+        }
+
+        .sign-in {
+            margin-right: 28px;
+            font-family: 'Lato', sans-serif;
+            color: $black;
+            font-size: 14px;
+        }
+
+    }
+
+    .nav {
+        background-color: $black;
+        height: 75px;
+
+        .container {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+
+            nav {
+                display: flex;
+
+                a {
+                    position: relative;
+                    height: 27px;
+                    width: 128px;
+                    border: 1px solid transparent;
+                    border-radius: 4px;
+                    text-transform: uppercase;
+                    color: white;
+                    text-decoration: none;
+                    font-size: 12px;
+                    font-family: 'Proxima Nova Rg';
+                    text-align: center;
+                    line-height: 27px;
+
+                    &:hover,
+                    &.active {
+                        border-color: #696969;
+                    }
+                }
+            }
+
+            .like-and-search {
+                position: absolute;
+                right: 7px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: $orange45;
+                display: flex;
+
+                button {
+                    border-style: solid;
+                    background: none;
+                    border-left: none;
+                    border-bottom: none;
+                    border-top: none;
+                    font-size: 16px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    box-sizing: content-box;
+                    border-width: 1px;
+                    border-color: $orange45;
+                    color: $orange45;
+                    outline: none;
+
+                    &:last-child {
+                        border: none;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .parallax {
+        position: relative;
+        height: 132px;
+        background-color: $black;
+
+        .bg {
+            height: 100%;
+            background-image: url(../img/processor-mikroshema-plata-chip.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 50% 0;
+            opacity: .17;
+        }
+
+        .header {
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 378px;
+            height: 63px;
+            text-align: center;
+            line-height: 63px;
+            text-transform: uppercase;
+            color: white;
+
+            span {
+                color: $orange14;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 23px;
+                border: 1px solid white;
+                border-right: none;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+                width: 23px;
+                border: 1px solid white;
+                border-left: none;
+            }
+        }
+    }
+}
