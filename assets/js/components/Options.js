@@ -17,11 +17,9 @@ class Options extends React.Component {
         } else {
             this.maxMarginLeft = 0;
         }
-        console.log('constructor', props.options.length, this.shownItems, this.maxMarginLeft);
     }
 
     onClickOption(id) {
-        console.log('Option', id);
         this.props.selectOption(id);
     }
 
@@ -34,7 +32,6 @@ class Options extends React.Component {
     }
 
     next() {
-        console.log('NEXT option', this.maxMarginLeft);
         if (Math.abs(this.state.marginLeft) === this.maxMarginLeft) {
             this.setState({marginLeft: 0});
         } else {
@@ -48,7 +45,6 @@ class Options extends React.Component {
             <section className="options">
                 {this.props.options.map((option, i) => {
                     if (i === 0) {
-                    console.log('Index', i);
                     return (
                         <div key={option.id} style={{marginLeft: this.state.marginLeft}} onClick={this.onClickOption.bind(this, option.id)} className={option.selected ? 'selected' : ''}>
                             <div>

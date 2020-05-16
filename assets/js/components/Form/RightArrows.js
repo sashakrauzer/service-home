@@ -13,10 +13,10 @@ class RightArrows extends React.Component {
         return (
         <div className="form__right-arrows">
             <button>
-                <img src="../img/button-arrow.svg" alt="" />
+                <img src="img/button-arrow.svg" alt="" />
             </button>
             <button>
-                <img src="../img/button-arrow.svg" alt="" />
+                <img src="img/button-arrow.svg" alt="" />
             </button>
         </div>
         )

@@ -28,7 +28,7 @@ class Form extends React.Component {
     } else {
         this.stepIsComplete = false;
     }
-    console.log('stepIsComplete', this.stepIsComplete);
+
     return (
         <div className="row form">
             <ChoosenOptions options={this.props.options}/>
